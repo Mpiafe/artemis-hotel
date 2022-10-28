@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  font-size: 62,5%;
+  /** 1 rem= 16px
+   con esta regla 1 rem= 10px*/ }
+
+/* barrita azul que tiene condiciones covid*/
+.covid {
+  background-color: grey;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold; }
+
+/* tiene logo blanco e items para navegar*/
+.header {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  position: sticky;
+  background-color: white; }
+  .header a img {
+    border-radius: 45%;
+    display: flex;
+    width: 55%;
+    justify-content: flex-end;
+    margin: 2% 4% 2% 4%; }
+
+nav {
+  width: 100%;
+  height: 35%; }
+
+/*clase de la lista*/
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 3rem;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  margin-right: 3%; }
+  .navBar li {
+    list-style: none; }
+    .navBar li a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: black; }
+      .navBar li a:hover {
+        color: burlywood; }
+
+/*foto de portada*/
+main img {
+  width: 70%;
+  height: 70%; }
+
+/*cuerpo de la pagina texto*/
+section {
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  color: white; }
+
+.titulo {
+  text-align: center;
+  color: grey;
+  font-size: 2rem;
+  line-height: 0.5rem;
+  font-weight: bold;
+  margin-top: 2%; }
+
+.parrafo {
+  margin: 2% 2% 2% 2%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: grey; }
+
+.logo {
+  width: 8%;
+  height: fit-content;
+  margin-left: 15%;
+  margin-bottom: 2%; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 90%;
+  background-color: white; }
+  .footer div {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder; }
+    .footer div a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold; }
+  .footer section {
+    background-image: linear-gradient(grey, rgba(252, 252, 244, 0.754)); }
+  .footer h3 {
+    margin-top: 1%;
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder; }
+  .footer h4 {
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder; }
+  .footer h5 {
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder; }
+  .footer h6 {
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 1%; }
+
+div img {
+  width: 100%;
+  height: 40%; }
+
+.gridContainer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px  1fr;
+  grid-template-areas: "foto petitSuite", "foto honeyMoon", "foto grandSuite"; }
+
+.petitSuite {
+  grid-area: foto petitSuite;
+  grid-column: 1/9;
+  grid-row: 1/3; }
+  .petitSuite img {
+    grid-column: 1/5;
+    grid-row: 1/4;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+    border-radius: 5%; }
+  .petitSuite h1 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 49%;
+    font-size: 2rem;
+    margin-top: 2%; }
+  .petitSuite p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 29%;
+    margin-top: 2%;
+    font-size: 1rem; }
+
+.honeyMoon {
+  grid-area: foto honeyMoon;
+  grid-column: 1/9;
+  grid-row: 4/6; }
+  .honeyMoon img {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+    border-radius: 5%; }
+  .honeyMoon h2 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 49%;
+    font-size: 2rem; }
+  .honeyMoon p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 18%;
+    margin-top: 2%;
+    font-size: 1rem; }
+
+.grandSuite {
+  grid-area: foto grandSuite;
+  grid-column: 1/9;
+  grid-row: 7/9; }
+  .grandSuite img {
+    grid-column: 2/7;
+    grid-row: 7/8;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+    border-radius: 5%; }
+  .grandSuite h3 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 49%;
+    font-size: 2rem; }
+  .grandSuite p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 18%;
+    margin-top: 2%;
+    font-size: 1rem; }
+
+div img {
+  width: 100%;
+  height: 65%; }
+
+.grid-main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas: "foto cuisine" "foto spa" "foto Wedding"; }
+
+.cuisine {
+  grid-area: foto cuisine;
+  grid-column: 1/9;
+  grid-row: 1/3; }
+  .cuisine img {
+    grid-column: 1/5;
+    grid-row: 1/4;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+    border-radius: 5%; }
+  .cuisine h1 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 47%;
+    font-size: 2rem;
+    margin-top: 1%; }
+  .cuisine p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 19%;
+    margin-top: 2%;
+    font-size: 1rem; }
+
+.Spa {
+  grid-area: foto spa;
+  grid-column: 1/9;
+  grid-row: 4/6; }
+  .Spa img {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+    border-radius: 5%; }
+  .Spa h2 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 35%;
+    font-size: 2rem;
+    margin-top: 1%; }
+  .Spa p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 19%;
+    margin-top: 2%;
+    font-size: 1rem; }
+
+.wedding {
+  grid-area: foto Wedding;
+  grid-column: 1/9;
+  grid-row: 7/9; }
+  .wedding img {
+    grid-column: 2/7;
+    grid-row: 7/8;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+    border-radius: 5%; }
+  .wedding h3 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 44%;
+    font-size: 2rem;
+    margin-top: 1%; }
+  .wedding p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 19%;
+    margin-top: 2%;
+    font-size: 1rem; }
+
+main {
+  background-color: white; }
+  main div img {
+    width: 100%;
+    height: 100%; }
+  main h2 {
+    color: grey;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 45%; }
+  main h3 {
+    color: grey;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 45%; }
+  main h4 {
+    color: grey;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 45%; }
+
+.fotosVistas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-wrap: nowrap;
+  margin-left: 0%;
+  margin-top: 2%;
+  width: 35%;
+  height: 35%; }
+
+.fotosSuites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-wrap: nowrap;
+  margin-left: 0%;
+  margin-top: 2%;
+  width: 35%;
+  height: 35%; }
+
+.fotosExpe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-wrap: nowrap;
+  margin-left: 0%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  width: 35%;
+  height: 35%; }
+
+.formulario {
+  background-color: lightgrey;
+  color: grey;
+  font-size: 1rem;
+  font-weight: bold; }
+
+.formulario img {
+  width: 100%;
+  height: 60%; }

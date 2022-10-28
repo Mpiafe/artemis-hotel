@@ -1,0 +1,6 @@
+
+window[window["TiktokAnalyticsObject"]].instance("C6D1EB6DUP8O9FFURNCG").setAdvancedMatchingAvailableProperties({"email":true,"phone_number":true,"auto_email":true,"auto_phone_number":true});
+window[window["TiktokAnalyticsObject"]].instance("C6D1EB6DUP8O9FFURNCG").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("C6D1EB6DUP8O9FFURNCG").setPixelInfo({status: 0, name: "Tailor Production", advertiserID: "7031181118221090818", setupMode: 1, partner: "", is_onsite: false });
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("tailorbrands.com");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig(null);
+window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie && window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie(true);
