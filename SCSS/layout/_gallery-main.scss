@@ -61,3 +61,31 @@ main{
     width: 35%;
     height: 35%; 
 }
+/*responsive*/
+@media (max-width: 576px){
+
+    main{
+
+     h2{
+        color:grey;
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 45%;
+    }
+    h3{
+        color:grey;
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 45%;
+    }
+     h4{
+        color:grey;
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 45%;
+    }
+}
+}

@@ -62,4 +62,47 @@ nav{
         } 
     }
 
-  
+  /*Responsive*/
+@media (max-width: 576px){
+    #menu_on{
+        display: inline-block;
+        width:30px;
+        height: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    nav{
+        width: 100%;   
+        height: 15%;
+    }
+    .header {
+        a {
+            img{
+        border-radius: 45%;
+        display: flex;
+        width: 65%;
+        justify-content: flex-end;
+        margin: 2% 4% 2% 4%;
+    }
+}
+    }
+    /*clase de la lista*/  
+    .navBar{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        column-gap: 3rem;
+        font-size: 0.3em;
+        margin-top: 4rem; 
+        margin-right: 3%;  
+        li{
+            list-style: none;  
+            a{
+                text-decoration: none;
+                font-weight: bolder;  
+                color:black; 
+        }
+    }
+}
+}

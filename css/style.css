@@ -61,6 +61,39 @@ nav {
       .navBar li a:hover {
         color: burlywood; }
 
+/*Responsive*/
+@media (max-width: 576px) {
+  #menu_on {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2; }
+  nav {
+    width: 100%;
+    height: 15%; }
+  .header a img {
+    border-radius: 45%;
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+    margin: 2% 4% 2% 4%; }
+  /*clase de la lista*/
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 3rem;
+    font-size: 0.3em;
+    margin-top: 4rem;
+    margin-right: 3%; }
+    .navBar li {
+      list-style: none; }
+      .navBar li a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: black; } }
+
 /*foto de portada*/
 main img {
   width: 70%;
@@ -93,6 +126,27 @@ section {
   height: fit-content;
   margin-left: 15%;
   margin-bottom: 2%; }
+
+/*responsive*/
+@media (max-width: 576px) {
+  section {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    color: white; }
+  .titulo {
+    text-align: center;
+    color: grey;
+    font-size: 0.6rem;
+    line-height: 0.5rem;
+    font-weight: bold;
+    margin-top: 2%; }
+  .parrafo {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: grey; } }
 
 .footer {
   display: flex;
@@ -219,6 +273,87 @@ div img {
     margin-top: 2%;
     font-size: 1rem; }
 
+/*responsive*/
+@media (max-width: 576px) {
+  .gridContainer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 1fr;
+    grid-template-areas: "foto petitSuite", "foto honeyMoon", "foto grandSuite"; }
+  .petitSuite {
+    grid-area: foto petitSuite;
+    grid-column: 1/3;
+    grid-row: 1/2; }
+    .petitSuite img {
+      grid-column: 1/5;
+      grid-row: 1/4;
+      width: 60%;
+      height: 100%;
+      margin-top: 0%;
+      margin-left: 50%;
+      border-radius: 5%; }
+    .petitSuite h1 {
+      color: grey;
+      font-weight: bold;
+      margin-left: 75%;
+      font-size: 0.5rem;
+      margin-top: 5%; }
+    .petitSuite p {
+      color: grey;
+      font-weight: bold;
+      margin-left: 65%;
+      margin-top: 6%;
+      font-size: 0.5rem; } }
+
+.honeyMoon {
+  grid-area: foto honeyMoon;
+  grid-column: 1/3;
+  grid-row: 3/4; }
+  .honeyMoon img {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 50%;
+    border-radius: 5%; }
+  .honeyMoon h2 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 75%;
+    font-size: 0.5rem; }
+  .honeyMoon p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 65%;
+    margin-top: 6%;
+    font-size: 0.5rem; }
+
+.grandSuite {
+  grid-area: foto grandSuite;
+  grid-column: 1/3;
+  grid-row: 5/6; }
+  .grandSuite img {
+    grid-column: 2/7;
+    grid-row: 7/8;
+    width: 60%;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 50%;
+    border-radius: 5%; }
+  .grandSuite h3 {
+    color: grey;
+    font-weight: bold;
+    margin-left: 75%;
+    font-size: 0.5rem; }
+  .grandSuite p {
+    color: grey;
+    font-weight: bold;
+    margin-left: 65%;
+    margin-top: 7%;
+    font-size: 0.5rem; }
+
 div img {
   width: 100%;
   height: 65%; }
@@ -305,6 +440,84 @@ div img {
     margin-top: 2%;
     font-size: 1rem; }
 
+/*responsive*/
+@media (max-width: 576px) {
+  .grid-main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 1fr;
+    grid-template-areas: "foto cuisine" "foto spa" "foto Wedding"; }
+  .cuisine {
+    grid-area: foto cuisine;
+    grid-column: 1/3;
+    grid-row: 1/2; }
+    .cuisine img {
+      grid-column: 1/5;
+      grid-row: 1/4;
+      width: 60%;
+      height: 100%;
+      margin-top: 0%;
+      margin-left: 50%;
+      border-radius: 5%; }
+    .cuisine h1 {
+      color: grey;
+      font-weight: bold;
+      margin-left: 70%;
+      font-size: 0.5rem; }
+    .cuisine p {
+      color: grey;
+      font-weight: bold;
+      margin-left: 65%;
+      margin-top: 6%;
+      font-size: 0.5rem; }
+  .Spa {
+    grid-area: foto spa;
+    grid-column: 1/3;
+    grid-row: 3/4; }
+    .Spa img {
+      grid-column: 1/5;
+      grid-row: 5/6;
+      width: 60%;
+      height: 100%;
+      margin-top: 0%;
+      margin-left: 50%;
+      border-radius: 5%; }
+    .Spa h2 {
+      color: grey;
+      font-weight: bold;
+      margin-left: 56%;
+      font-size: 0.5rem; }
+    .Spa p {
+      color: grey;
+      font-weight: bold;
+      margin-left: 65%;
+      margin-top: 6%;
+      font-size: 0.5rem; }
+  .wedding {
+    grid-area: foto Wedding;
+    grid-column: 1/3;
+    grid-row: 5/6; }
+    .wedding img {
+      grid-column: 2/7;
+      grid-row: 7/8;
+      width: 60%;
+      height: 100%;
+      margin-top: 0%;
+      margin-left: 50%;
+      border-radius: 5%; }
+    .wedding h3 {
+      color: grey;
+      font-weight: bold;
+      margin-left: 68%;
+      font-size: 0.5rem; }
+    .wedding p {
+      color: grey;
+      font-weight: bold;
+      margin-left: 65%;
+      margin-top: 6%;
+      font-size: 0.5rem; } }
+
 main {
   background-color: white; }
   main div img {
@@ -362,6 +575,27 @@ main {
   margin-bottom: 0%;
   width: 35%;
   height: 35%; }
+
+/*responsive*/
+@media (max-width: 576px) {
+  main h2 {
+    color: grey;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 45%; }
+  main h3 {
+    color: grey;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 45%; }
+  main h4 {
+    color: grey;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 45%; } }
 
 .formulario {
   background-color: lightgrey;
