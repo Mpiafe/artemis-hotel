@@ -360,7 +360,7 @@ div img {
     margin-left: 65%;
     margin-top: 7%;
     font-size: 0.5rem; }
-
+*/
 div img {
   width: 100%;
   height: 65%; }
@@ -450,7 +450,7 @@ div img {
     font-size: 1rem; }
 
 /*responsive*/
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .grid-main {
     background-color: white;
     display: grid;
@@ -485,7 +485,8 @@ div img {
   .Spa {
     grid-area: foto spa;
     grid-column: 1/3;
-    grid-row: 3/4; }
+    grid-row: 3/4; 
+  }
     .Spa img {
       grid-column: 1/5;
       grid-row: 5/6;
@@ -493,7 +494,8 @@ div img {
       height: 100%;
       margin-top: 0%;
       margin-left: 50%;
-      border-radius: 5%; }
+      border-radius: 5%; 
+    }
     .Spa h2 {
       color: grey;
       font-weight: bold;
