@@ -374,7 +374,7 @@ div img{
 }
 
 /*Mobile First*/
-@media (max-width: 576px){
+/*@media (max-width: 576px){
     .gridContainer{
         background-color: white;
         display:grid;
@@ -776,6 +776,3 @@ main h4{
     height: 60%;
 }
 
- /*RESPONSIVE*/
- @media (max-width: 576px){
- }

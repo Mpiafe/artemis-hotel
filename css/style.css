@@ -198,7 +198,12 @@ div img {
   display: grid;
   grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 1fr;
   grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px  1fr;
-  grid-template-areas: "foto petitSuite", "foto honeyMoon", "foto grandSuite"; }
+  grid-template-areas: 
+   "foto petitSuite",
+   "foto honeyMoon",
+  "foto grandSuite",
+
+  }
 
 .petitSuite {
   grid-area: foto petitSuite;
@@ -274,13 +279,15 @@ div img {
     font-size: 1rem; }
 
 /*responsive*/
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .gridContainer {
     background-color: white;
     display: grid;
     grid-template-columns: 150px 150px 150px 1fr;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 1fr;
-    grid-template-areas: "foto petitSuite", "foto honeyMoon", "foto grandSuite"; }
+    grid-template-areas: "foto petitSuite",
+ "foto honeyMoon",
+ "foto grandSuite"; }
   .petitSuite {
     grid-area: foto petitSuite;
     grid-column: 1/3;
@@ -363,7 +370,9 @@ div img {
   display: grid;
   grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 1fr;
   grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 1fr;
-  grid-template-areas: "foto cuisine" "foto spa" "foto Wedding"; }
+  grid-template-areas: "foto cuisine"
+ "foto spa"
+ "foto Wedding"; }
 
 .cuisine {
   grid-area: foto cuisine;
@@ -447,7 +456,9 @@ div img {
     display: grid;
     grid-template-columns: 150px 150px 150px 1fr;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 1fr;
-    grid-template-areas: "foto cuisine" "foto spa" "foto Wedding"; }
+    grid-template-areas: "foto cuisine"
+ "foto spa"
+ "foto Wedding"; }
   .cuisine {
     grid-area: foto cuisine;
     grid-column: 1/3;

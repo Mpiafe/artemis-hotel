@@ -53,7 +53,7 @@ div img{
         margin-top: 0%;
         margin-left: 25%;  
         border-radius: 5%;
-    }
+        }
     h2{
         color:grey;
         font-weight: bold;
@@ -71,7 +71,7 @@ div img{
 .grandSuite{
     grid-area: foto grandSuite ;
     grid-column: 1/9;
-    grid-row: 7/9;    
+    grid-row: 3/9;    
     img{
         grid-column: 2/7;
         grid-row: 7/8;
